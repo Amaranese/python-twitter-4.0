@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "python-twitter-v2"
+version = "0.7.2"
+description = "A simple Python wrapper for Twitter API v2 ✨ 🍰 ✨"
+authors = ["ikaroskun <merle.liukun@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/sns-sdks/python-twitter"
+keywords = ["twitter", "twitter sdk", "twitter api", "Twitter API V2"]
+classifiers = [
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+]
+packages = [
+    { include = "pytwitter"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.24"
+dataclasses-json = "^0.5.2"
+Authlib = "^0.15.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+responses = "^0.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

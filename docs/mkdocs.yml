@@ -1,0 +1,77 @@
+site_name: Python Twitter V2 Docs
+site_description: Docs for python-twitetr-v2 library
+repo_url: https://github.com/sns-sdks/python-twitter
+site_url: https://sns-sdks.github.io/python-twitter/
+copyright: Copyright &copy; 2021 - 2021 Ikaros kun
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+nav:
+  - Introduction: index.md
+  - Installation: installation.md
+  - Authorization: authorization.md
+  - Authorization OAuth2.0: authorization_oauth2.md
+  - Usage:
+      - Preparation: usage/preparation.md
+      - Tweets:
+          - Tweet Lookup: usage/tweets/tweet-lookup.md
+          - Manage Tweets: usage/tweets/tweet-manage.md
+          - Timelines: usage/tweets/timelines.md
+          - Search Tweets: usage/tweets/search_tweets.md
+          - Tweet counts: usage/tweets/tweets_counts.md
+          - Hide replies: usage/tweets/hide_reply.md
+          - Retweets: usage/tweets/retweet.md
+          - Likes: usage/tweets/likes.md
+      - Users:
+          - Users Lookup: usage/users/user-lookup.md
+          - Follows: usage/users/follows.md
+          - Blocks: usage/users/blocks.md
+          - Mutes: usage/users/mutes.md
+      - Spaces:
+          - Spaces Lookup: usage/spaces/spaces-lookup.md
+          - Spaces Search: usage/spaces/search.md
+      - Lists:
+          - List lookup: usage/lists/list-lookup.md
+          - Manage Lists: usage/lists/manage-lists.md
+          - List Tweets lookup: usage/lists/list-tweets-lookup.md
+          - List members: usage/lists/list-members.md
+          - List follows: usage/lists/list-follows.md
+          - Pinned Lists: usage/lists/pinned-lists.md
+      - Compliance:
+          - Batch compliance: usage/compliance/batch_compliance.md
+      - Steaming: usage/streaming.md
+  - Changelog: CHANGELOG.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/realllkk520
+    - icon: fontawesome/brands/github
+      link: https://github.com/sns-sdks/python-twitter
+
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.emoji
